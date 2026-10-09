@@ -19,6 +19,8 @@ document the assumptions made during the cleaning process.
 - Validate the cleaned dataset
 - Document cleaning assumptions
 - Export the cleaned dataset
+- Perform Exploratory Data Analysis (EDA) using statistics and visualizations
+- Identify at least five insights and explain their implications for machine learning or decision-making
 
 ## Dataset
 
@@ -128,3 +130,21 @@ titanic-data-cleaning/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+
+## Exploratory Data Analysis (Task 2)
+
+Exploratory Data Analysis (EDA) was performed on the cleaned Titanic dataset using Python, Pandas, Matplotlib, and Seaborn.
+
+The analysis included descriptive statistics, survival distribution, survival comparisons by sex and passenger class, age distribution, family-size analysis, ticket-fare comparison, and a correlation heatmap.
+
+### Key Insights
+
+1. **Sex:** Survival rates were compared across sex groups to investigate whether sex could be a useful feature for predicting survival.
+2. **Passenger Class:** Survival rates were compared across passenger classes to examine differences in survival outcomes.
+3. **Family Size:** Family size was calculated using `SibSp` and `Parch` to explore the relationship between family composition and survival.
+4. **Age:** Age distributions and average ages were compared by survival status to investigate potential age-related patterns.
+5. **Ticket Fare:** Fare distributions and median fares were compared by survival status to assess potential predictive value.
+
+### Model and Decision Implications
+
+The analysis helps identify candidate features for a future survival-prediction model. These relationships represent associations, not proof of causation. Further model training and validation would be needed to determine which features improve predictive performance.
